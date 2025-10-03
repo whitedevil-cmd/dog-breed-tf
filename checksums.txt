@@ -1,0 +1,5 @@
+SHA256  best_irv2.keras  <hash_here>
+SHA256  best_iv4.keras   <hash_here>
+SHA256  class_index.json <hash_here>
+SHA256  config.json      <hash_here>
+SHA256  ensemble_infer.py <hash_here>

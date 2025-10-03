@@ -1,0 +1,34 @@
+{
+  "project": "dogbreed",
+  "models": [
+    {
+      "name": "best_irv2",
+      "file": "best_irv2.keras",
+      "input_size": [299, 299, 3],
+      "framework": "Keras",
+      "preprocessing": {
+        "library": "tf.keras.applications.inception_resnet_v2",
+        "function": "preprocess_input",
+        "rescale": null
+      }
+    },
+    {
+      "name": "best_iv4",
+      "file": "best_iv4.keras",
+      "input_size": [299, 299, 3],
+      "framework": "Keras",
+      "preprocessing": {
+        "library": "tf.keras.applications.xception",
+        "function": "preprocess_input",
+        "rescale": null
+      }
+    }
+  ],
+  "classes_file": "class_index.json",
+  "num_classes": 120,
+  "inference": {
+    "batch_size": 16,
+    "clip_min": 1e-15,
+    "normalize_rows": true
+  }
+}
